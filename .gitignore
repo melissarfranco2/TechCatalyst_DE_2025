@@ -1,0 +1,6 @@
+**/.env
+**/.cfg
+
+dev2/
+env/
+pycaret_env/

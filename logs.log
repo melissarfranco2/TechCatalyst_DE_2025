@@ -1,0 +1,927 @@
+2025-08-08 19:04:18,979:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-08-08 19:04:18,979:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-08-08 19:04:18,979:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-08-08 19:04:18,980:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-08-08 19:05:10,488:INFO:PyCaret ClassificationExperiment
+2025-08-08 19:05:10,490:INFO:Logging name: clf-default-name
+2025-08-08 19:05:10,490:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2025-08-08 19:05:10,491:INFO:version 3.3.2
+2025-08-08 19:05:10,491:INFO:Initializing setup()
+2025-08-08 19:05:10,491:INFO:self.USI: 87f2
+2025-08-08 19:05:10,491:INFO:self._variable_keys: {'html_param', 'gpu_n_jobs_param', 'fold_groups_param', 'pipeline', 'target_param', 'memory', 'seed', 'X_test', 'fold_generator', 'fold_shuffle_param', 'idx', 'data', '_ml_usecase', '_available_plots', 'X_train', 'y_test', 'y_train', 'is_multiclass', 'logging_param', 'X', 'exp_id', 'fix_imbalance', 'gpu_param', 'y', 'exp_name_log', 'USI', 'log_plots_param', 'n_jobs_param'}
+2025-08-08 19:05:10,491:INFO:Checking environment
+2025-08-08 19:05:10,491:INFO:python_version: 3.11.13
+2025-08-08 19:05:10,491:INFO:python_build: ('main', 'Jun  5 2025 13:12:00')
+2025-08-08 19:05:10,491:INFO:machine: x86_64
+2025-08-08 19:05:10,493:INFO:platform: Linux-6.8.0-1030-azure-x86_64-with-glibc2.39
+2025-08-08 19:05:10,493:INFO:Memory: svmem(total=8330579968, available=2799624192, percent=66.4, used=5134880768, free=215040000, active=5733396480, inactive=1706151936, buffers=52649984, cached=2928009216, shared=65585152, slab=455340032)
+2025-08-08 19:05:10,494:INFO:Physical Core: 1
+2025-08-08 19:05:10,495:INFO:Logical Core: 2
+2025-08-08 19:05:10,495:INFO:Checking libraries
+2025-08-08 19:05:10,495:INFO:System:
+2025-08-08 19:05:10,495:INFO:    python: 3.11.13 (main, Jun  5 2025, 13:12:00) [GCC 11.2.0]
+2025-08-08 19:05:10,496:INFO:executable: /workspaces/TechCatalyst_DE_2025/pycaret_env/bin/python
+2025-08-08 19:05:10,496:INFO:   machine: Linux-6.8.0-1030-azure-x86_64-with-glibc2.39
+2025-08-08 19:05:10,496:INFO:PyCaret required dependencies:
+2025-08-08 19:05:13,150:INFO:                 pip: 24.0
+2025-08-08 19:05:13,150:INFO:          setuptools: 65.5.0
+2025-08-08 19:05:13,150:INFO:             pycaret: 3.3.2
+2025-08-08 19:05:13,150:INFO:             IPython: 9.4.0
+2025-08-08 19:05:13,150:INFO:          ipywidgets: 8.1.7
+2025-08-08 19:05:13,150:INFO:                tqdm: 4.67.1
+2025-08-08 19:05:13,150:INFO:               numpy: 1.26.4
+2025-08-08 19:05:13,150:INFO:              pandas: 2.1.4
+2025-08-08 19:05:13,150:INFO:              jinja2: 3.1.6
+2025-08-08 19:05:13,150:INFO:               scipy: 1.11.4
+2025-08-08 19:05:13,150:INFO:              joblib: 1.3.2
+2025-08-08 19:05:13,150:INFO:             sklearn: 1.4.2
+2025-08-08 19:05:13,150:INFO:                pyod: 2.0.5
+2025-08-08 19:05:13,150:INFO:            imblearn: 0.13.0
+2025-08-08 19:05:13,150:INFO:   category_encoders: 2.7.0
+2025-08-08 19:05:13,151:INFO:            lightgbm: 4.6.0
+2025-08-08 19:05:13,151:INFO:               numba: 0.61.2
+2025-08-08 19:05:13,151:INFO:            requests: 2.32.4
+2025-08-08 19:05:13,151:INFO:          matplotlib: 3.7.5
+2025-08-08 19:05:13,151:INFO:          scikitplot: 0.3.7
+2025-08-08 19:05:13,151:INFO:         yellowbrick: 1.5
+2025-08-08 19:05:13,151:INFO:              plotly: 5.24.1
+2025-08-08 19:05:13,151:INFO:    plotly-resampler: Not installed
+2025-08-08 19:05:13,151:INFO:             kaleido: 1.0.0
+2025-08-08 19:05:13,151:INFO:           schemdraw: 0.15
+2025-08-08 19:05:13,151:INFO:         statsmodels: 0.14.5
+2025-08-08 19:05:13,151:INFO:              sktime: 0.26.0
+2025-08-08 19:05:13,151:INFO:               tbats: 1.1.3
+2025-08-08 19:05:13,151:INFO:            pmdarima: 2.0.4
+2025-08-08 19:05:13,151:INFO:              psutil: 7.0.0
+2025-08-08 19:05:13,151:INFO:          markupsafe: 3.0.2
+2025-08-08 19:05:13,151:INFO:             pickle5: Not installed
+2025-08-08 19:05:13,151:INFO:         cloudpickle: 3.1.1
+2025-08-08 19:05:13,152:INFO:         deprecation: 2.1.0
+2025-08-08 19:05:13,152:INFO:              xxhash: 3.5.0
+2025-08-08 19:05:13,152:INFO:           wurlitzer: 3.1.1
+2025-08-08 19:05:13,152:INFO:PyCaret optional dependencies:
+2025-08-08 19:05:17,761:INFO:                shap: 0.44.1
+2025-08-08 19:05:17,761:INFO:           interpret: 0.6.9
+2025-08-08 19:05:17,761:INFO:                umap: 0.5.7
+2025-08-08 19:05:17,761:INFO:     ydata_profiling: 4.14.0
+2025-08-08 19:05:17,762:INFO:  explainerdashboard: 0.4.8
+2025-08-08 19:05:17,762:INFO:             autoviz: Not installed
+2025-08-08 19:05:17,762:INFO:           fairlearn: 0.7.0
+2025-08-08 19:05:17,762:INFO:          deepchecks: Not installed
+2025-08-08 19:05:17,762:INFO:             xgboost: 3.0.3
+2025-08-08 19:05:17,762:INFO:            catboost: 1.2.8
+2025-08-08 19:05:17,762:INFO:              kmodes: 0.12.2
+2025-08-08 19:05:17,762:INFO:             mlxtend: 0.23.4
+2025-08-08 19:05:17,763:INFO:       statsforecast: 1.5.0
+2025-08-08 19:05:17,763:INFO:        tune_sklearn: Not installed
+2025-08-08 19:05:17,763:INFO:                 ray: Not installed
+2025-08-08 19:05:17,763:INFO:            hyperopt: 0.2.7
+2025-08-08 19:05:17,763:INFO:              optuna: 4.4.0
+2025-08-08 19:05:17,763:INFO:               skopt: 0.10.2
+2025-08-08 19:05:17,763:INFO:              mlflow: 3.2.0
+2025-08-08 19:05:17,763:INFO:              gradio: 5.41.1
+2025-08-08 19:05:17,763:INFO:             fastapi: 0.116.1
+2025-08-08 19:05:17,763:INFO:             uvicorn: 0.35.0
+2025-08-08 19:05:17,763:INFO:              m2cgen: 0.10.0
+2025-08-08 19:05:17,763:INFO:           evidently: 0.4.40
+2025-08-08 19:05:17,763:INFO:               fugue: 0.8.7
+2025-08-08 19:05:17,763:INFO:           streamlit: Not installed
+2025-08-08 19:05:17,763:INFO:             prophet: Not installed
+2025-08-08 19:05:17,763:INFO:None
+2025-08-08 19:05:17,763:INFO:Set up data.
+2025-08-08 19:05:17,781:INFO:Set up folding strategy.
+2025-08-08 19:05:17,781:INFO:Set up train/test split.
+2025-08-08 19:05:17,791:INFO:Set up index.
+2025-08-08 19:05:17,791:INFO:Assigning column types.
+2025-08-08 19:05:17,795:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2025-08-08 19:05:17,893:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2025-08-08 19:05:17,909:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2025-08-08 19:05:18,017:INFO:Soft dependency imported: xgboost: 3.0.3
+2025-08-08 19:05:18,022:INFO:Soft dependency imported: catboost: 1.2.8
+2025-08-08 19:05:18,708:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2025-08-08 19:05:18,710:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2025-08-08 19:05:18,795:INFO:Soft dependency imported: xgboost: 3.0.3
+2025-08-08 19:05:18,801:INFO:Soft dependency imported: catboost: 1.2.8
+2025-08-08 19:05:18,801:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2025-08-08 19:05:18,922:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2025-08-08 19:05:18,982:INFO:Soft dependency imported: xgboost: 3.0.3
+2025-08-08 19:05:18,986:INFO:Soft dependency imported: catboost: 1.2.8
+2025-08-08 19:05:19,061:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2025-08-08 19:05:19,121:INFO:Soft dependency imported: xgboost: 3.0.3
+2025-08-08 19:05:19,125:INFO:Soft dependency imported: catboost: 1.2.8
+2025-08-08 19:05:19,126:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2025-08-08 19:05:19,240:INFO:Soft dependency imported: xgboost: 3.0.3
+2025-08-08 19:05:19,245:INFO:Soft dependency imported: catboost: 1.2.8
+2025-08-08 19:05:19,378:INFO:Soft dependency imported: xgboost: 3.0.3
+2025-08-08 19:05:19,382:INFO:Soft dependency imported: catboost: 1.2.8
+2025-08-08 19:05:19,385:INFO:Preparing preprocessing pipeline...
+2025-08-08 19:05:19,388:INFO:Set up simple imputation.
+2025-08-08 19:05:19,389:INFO:Set up column name cleaning.
+2025-08-08 19:05:19,421:INFO:Finished creating preprocessing pipeline.
+2025-08-08 19:05:19,435:INFO:Pipeline: Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['Number of times pregnant',
+                                             'Plasma glucose concentration a 2 '
+                                             'hours in an oral glucose '
+                                             'tolerance test',
+                                             'Diastolic blood pressure (mm Hg)',
+                                             'Triceps skin fold thickness (mm)',
+                                             '2-Hour serum insulin (mu U/ml)',
+                                             'Body mass index (weight in '
+                                             'kg/(height in m)^2)',
+                                             'Diab...
+                ('categorical_imputer',
+                 TransformerWrapper(exclude=None, include=[],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=CleanColumnNames(match='[\\]\\[\\,\\{\\}\\"\\:]+')))],
+         verbose=False)
+2025-08-08 19:05:19,435:INFO:Creating final display dataframe.
+2025-08-08 19:05:19,559:INFO:Setup _display_container:                     Description             Value
+0                    Session id               120
+1                        Target    Class variable
+2                   Target type            Binary
+3           Original data shape          (768, 9)
+4        Transformed data shape          (768, 9)
+5   Transformed train set shape          (537, 9)
+6    Transformed test set shape          (231, 9)
+7              Numeric features                 8
+8                    Preprocess              True
+9               Imputation type            simple
+10           Numeric imputation              mean
+11       Categorical imputation              mode
+12               Fold Generator   StratifiedKFold
+13                  Fold Number                10
+14                     CPU Jobs                -1
+15                      Use GPU             False
+16               Log Experiment             False
+17              Experiment Name  clf-default-name
+18                          USI              87f2
+2025-08-08 19:05:19,761:INFO:Soft dependency imported: xgboost: 3.0.3
+2025-08-08 19:05:19,767:INFO:Soft dependency imported: catboost: 1.2.8
+2025-08-08 19:05:19,945:INFO:Soft dependency imported: xgboost: 3.0.3
+2025-08-08 19:05:19,948:INFO:Soft dependency imported: catboost: 1.2.8
+2025-08-08 19:05:19,950:INFO:setup() successfully completed in 9.47s...............
+2025-08-08 19:05:28,504:INFO:Initializing compare_models()
+2025-08-08 19:05:28,505:INFO:compare_models(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ba5bd8eb3d0>, include=None, exclude=None, fold=None, round=4, cross_validation=True, sort=Accuracy, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.classification.oop.ClassificationExperiment object at 0x7ba5bd8eb3d0>, 'include': None, 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'Accuracy', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'probability_threshold': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.classification.oop.ClassificationExperiment'>})
+2025-08-08 19:05:28,507:INFO:Checking exceptions
+2025-08-08 19:05:28,523:INFO:Preparing display monitor
+2025-08-08 19:05:28,591:INFO:Initializing Logistic Regression
+2025-08-08 19:05:28,592:INFO:Total runtime is 3.914038340250651e-06 minutes
+2025-08-08 19:05:28,602:INFO:SubProcess create_model() called ==================================
+2025-08-08 19:05:28,602:INFO:Initializing create_model()
+2025-08-08 19:05:28,603:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ba5bd8eb3d0>, estimator=lr, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7ba591ac69d0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-08-08 19:05:28,603:INFO:Checking exceptions
+2025-08-08 19:05:28,603:INFO:Importing libraries
+2025-08-08 19:05:28,603:INFO:Copying training dataset
+2025-08-08 19:05:28,613:INFO:Defining folds
+2025-08-08 19:05:28,615:INFO:Declaring metric variables
+2025-08-08 19:05:28,622:INFO:Importing untrained model
+2025-08-08 19:05:28,633:INFO:Logistic Regression Imported successfully
+2025-08-08 19:05:28,656:INFO:Starting cross validation
+2025-08-08 19:05:28,658:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-08-08 19:05:37,842:INFO:Calculating mean and std
+2025-08-08 19:05:37,846:INFO:Creating metrics dataframe
+2025-08-08 19:05:37,849:INFO:Uploading results into container
+2025-08-08 19:05:37,850:INFO:Uploading model into container now
+2025-08-08 19:05:37,850:INFO:_master_model_container: 1
+2025-08-08 19:05:37,850:INFO:_display_container: 2
+2025-08-08 19:05:37,851:INFO:LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=120, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)
+2025-08-08 19:05:37,851:INFO:create_model() successfully completed......................................
+2025-08-08 19:05:38,127:INFO:SubProcess create_model() end ==================================
+2025-08-08 19:05:38,127:INFO:Creating metrics dataframe
+2025-08-08 19:05:38,133:INFO:Initializing K Neighbors Classifier
+2025-08-08 19:05:38,133:INFO:Total runtime is 0.15902720689773558 minutes
+2025-08-08 19:05:38,137:INFO:SubProcess create_model() called ==================================
+2025-08-08 19:05:38,137:INFO:Initializing create_model()
+2025-08-08 19:05:38,138:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ba5bd8eb3d0>, estimator=knn, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7ba591ac69d0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-08-08 19:05:38,138:INFO:Checking exceptions
+2025-08-08 19:05:38,138:INFO:Importing libraries
+2025-08-08 19:05:38,138:INFO:Copying training dataset
+2025-08-08 19:05:38,143:INFO:Defining folds
+2025-08-08 19:05:38,143:INFO:Declaring metric variables
+2025-08-08 19:05:38,147:INFO:Importing untrained model
+2025-08-08 19:05:38,151:INFO:K Neighbors Classifier Imported successfully
+2025-08-08 19:05:38,156:INFO:Starting cross validation
+2025-08-08 19:05:38,157:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-08-08 19:05:38,552:INFO:Calculating mean and std
+2025-08-08 19:05:38,554:INFO:Creating metrics dataframe
+2025-08-08 19:05:38,557:INFO:Uploading results into container
+2025-08-08 19:05:38,558:INFO:Uploading model into container now
+2025-08-08 19:05:38,559:INFO:_master_model_container: 2
+2025-08-08 19:05:38,559:INFO:_display_container: 2
+2025-08-08 19:05:38,559:INFO:KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+                     metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+                     weights='uniform')
+2025-08-08 19:05:38,559:INFO:create_model() successfully completed......................................
+2025-08-08 19:05:38,748:INFO:SubProcess create_model() end ==================================
+2025-08-08 19:05:38,748:INFO:Creating metrics dataframe
+2025-08-08 19:05:38,756:INFO:Initializing Naive Bayes
+2025-08-08 19:05:38,757:INFO:Total runtime is 0.16942429542541504 minutes
+2025-08-08 19:05:38,761:INFO:SubProcess create_model() called ==================================
+2025-08-08 19:05:38,762:INFO:Initializing create_model()
+2025-08-08 19:05:38,762:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ba5bd8eb3d0>, estimator=nb, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7ba591ac69d0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-08-08 19:05:38,762:INFO:Checking exceptions
+2025-08-08 19:05:38,762:INFO:Importing libraries
+2025-08-08 19:05:38,762:INFO:Copying training dataset
+2025-08-08 19:05:38,766:INFO:Defining folds
+2025-08-08 19:05:38,767:INFO:Declaring metric variables
+2025-08-08 19:05:38,771:INFO:Importing untrained model
+2025-08-08 19:05:38,774:INFO:Naive Bayes Imported successfully
+2025-08-08 19:05:38,782:INFO:Starting cross validation
+2025-08-08 19:05:38,783:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-08-08 19:05:39,006:INFO:Calculating mean and std
+2025-08-08 19:05:39,007:INFO:Creating metrics dataframe
+2025-08-08 19:05:39,010:INFO:Uploading results into container
+2025-08-08 19:05:39,011:INFO:Uploading model into container now
+2025-08-08 19:05:39,012:INFO:_master_model_container: 3
+2025-08-08 19:05:39,012:INFO:_display_container: 2
+2025-08-08 19:05:39,012:INFO:GaussianNB(priors=None, var_smoothing=1e-09)
+2025-08-08 19:05:39,012:INFO:create_model() successfully completed......................................
+2025-08-08 19:05:39,207:INFO:SubProcess create_model() end ==================================
+2025-08-08 19:05:39,207:INFO:Creating metrics dataframe
+2025-08-08 19:05:39,215:INFO:Initializing Decision Tree Classifier
+2025-08-08 19:05:39,216:INFO:Total runtime is 0.1770693103472392 minutes
+2025-08-08 19:05:39,219:INFO:SubProcess create_model() called ==================================
+2025-08-08 19:05:39,219:INFO:Initializing create_model()
+2025-08-08 19:05:39,219:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ba5bd8eb3d0>, estimator=dt, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7ba591ac69d0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-08-08 19:05:39,220:INFO:Checking exceptions
+2025-08-08 19:05:39,220:INFO:Importing libraries
+2025-08-08 19:05:39,220:INFO:Copying training dataset
+2025-08-08 19:05:39,226:INFO:Defining folds
+2025-08-08 19:05:39,226:INFO:Declaring metric variables
+2025-08-08 19:05:39,231:INFO:Importing untrained model
+2025-08-08 19:05:39,234:INFO:Decision Tree Classifier Imported successfully
+2025-08-08 19:05:39,240:INFO:Starting cross validation
+2025-08-08 19:05:39,241:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-08-08 19:05:39,466:INFO:Calculating mean and std
+2025-08-08 19:05:39,467:INFO:Creating metrics dataframe
+2025-08-08 19:05:39,469:INFO:Uploading results into container
+2025-08-08 19:05:39,469:INFO:Uploading model into container now
+2025-08-08 19:05:39,470:INFO:_master_model_container: 4
+2025-08-08 19:05:39,470:INFO:_display_container: 2
+2025-08-08 19:05:39,470:INFO:DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
+                       max_depth=None, max_features=None, max_leaf_nodes=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, random_state=120, splitter='best')
+2025-08-08 19:05:39,470:INFO:create_model() successfully completed......................................
+2025-08-08 19:05:39,652:INFO:SubProcess create_model() end ==================================
+2025-08-08 19:05:39,652:INFO:Creating metrics dataframe
+2025-08-08 19:05:39,661:INFO:Initializing SVM - Linear Kernel
+2025-08-08 19:05:39,661:INFO:Total runtime is 0.18449437220891318 minutes
+2025-08-08 19:05:39,665:INFO:SubProcess create_model() called ==================================
+2025-08-08 19:05:39,666:INFO:Initializing create_model()
+2025-08-08 19:05:39,666:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ba5bd8eb3d0>, estimator=svm, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7ba591ac69d0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-08-08 19:05:39,666:INFO:Checking exceptions
+2025-08-08 19:05:39,666:INFO:Importing libraries
+2025-08-08 19:05:39,666:INFO:Copying training dataset
+2025-08-08 19:05:39,671:INFO:Defining folds
+2025-08-08 19:05:39,671:INFO:Declaring metric variables
+2025-08-08 19:05:39,675:INFO:Importing untrained model
+2025-08-08 19:05:39,679:INFO:SVM - Linear Kernel Imported successfully
+2025-08-08 19:05:39,684:INFO:Starting cross validation
+2025-08-08 19:05:39,686:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-08-08 19:05:39,774:WARNING:/workspaces/TechCatalyst_DE_2025/pycaret_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-08-08 19:05:39,911:INFO:Calculating mean and std
+2025-08-08 19:05:39,912:INFO:Creating metrics dataframe
+2025-08-08 19:05:39,915:INFO:Uploading results into container
+2025-08-08 19:05:39,915:INFO:Uploading model into container now
+2025-08-08 19:05:39,916:INFO:_master_model_container: 5
+2025-08-08 19:05:39,916:INFO:_display_container: 2
+2025-08-08 19:05:39,917:INFO:SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+              early_stopping=False, epsilon=0.1, eta0=0.001, fit_intercept=True,
+              l1_ratio=0.15, learning_rate='optimal', loss='hinge',
+              max_iter=1000, n_iter_no_change=5, n_jobs=-1, penalty='l2',
+              power_t=0.5, random_state=120, shuffle=True, tol=0.001,
+              validation_fraction=0.1, verbose=0, warm_start=False)
+2025-08-08 19:05:39,917:INFO:create_model() successfully completed......................................
+2025-08-08 19:05:40,112:INFO:SubProcess create_model() end ==================================
+2025-08-08 19:05:40,113:INFO:Creating metrics dataframe
+2025-08-08 19:05:40,119:INFO:Initializing Ridge Classifier
+2025-08-08 19:05:40,119:INFO:Total runtime is 0.19212698539098105 minutes
+2025-08-08 19:05:40,123:INFO:SubProcess create_model() called ==================================
+2025-08-08 19:05:40,123:INFO:Initializing create_model()
+2025-08-08 19:05:40,123:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ba5bd8eb3d0>, estimator=ridge, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7ba591ac69d0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-08-08 19:05:40,124:INFO:Checking exceptions
+2025-08-08 19:05:40,124:INFO:Importing libraries
+2025-08-08 19:05:40,124:INFO:Copying training dataset
+2025-08-08 19:05:40,128:INFO:Defining folds
+2025-08-08 19:05:40,128:INFO:Declaring metric variables
+2025-08-08 19:05:40,133:INFO:Importing untrained model
+2025-08-08 19:05:40,138:INFO:Ridge Classifier Imported successfully
+2025-08-08 19:05:40,144:INFO:Starting cross validation
+2025-08-08 19:05:40,145:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-08-08 19:05:40,397:INFO:Calculating mean and std
+2025-08-08 19:05:40,399:INFO:Creating metrics dataframe
+2025-08-08 19:05:40,401:INFO:Uploading results into container
+2025-08-08 19:05:40,401:INFO:Uploading model into container now
+2025-08-08 19:05:40,402:INFO:_master_model_container: 6
+2025-08-08 19:05:40,402:INFO:_display_container: 2
+2025-08-08 19:05:40,402:INFO:RidgeClassifier(alpha=1.0, class_weight=None, copy_X=True, fit_intercept=True,
+                max_iter=None, positive=False, random_state=120, solver='auto',
+                tol=0.0001)
+2025-08-08 19:05:40,402:INFO:create_model() successfully completed......................................
+2025-08-08 19:05:40,592:INFO:SubProcess create_model() end ==================================
+2025-08-08 19:05:40,592:INFO:Creating metrics dataframe
+2025-08-08 19:05:40,599:INFO:Initializing Random Forest Classifier
+2025-08-08 19:05:40,599:INFO:Total runtime is 0.2001352389653524 minutes
+2025-08-08 19:05:40,603:INFO:SubProcess create_model() called ==================================
+2025-08-08 19:05:40,603:INFO:Initializing create_model()
+2025-08-08 19:05:40,604:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ba5bd8eb3d0>, estimator=rf, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7ba591ac69d0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-08-08 19:05:40,604:INFO:Checking exceptions
+2025-08-08 19:05:40,604:INFO:Importing libraries
+2025-08-08 19:05:40,604:INFO:Copying training dataset
+2025-08-08 19:05:40,610:INFO:Defining folds
+2025-08-08 19:05:40,610:INFO:Declaring metric variables
+2025-08-08 19:05:40,614:INFO:Importing untrained model
+2025-08-08 19:05:40,618:INFO:Random Forest Classifier Imported successfully
+2025-08-08 19:05:40,625:INFO:Starting cross validation
+2025-08-08 19:05:40,626:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-08-08 19:05:42,185:INFO:Calculating mean and std
+2025-08-08 19:05:42,187:INFO:Creating metrics dataframe
+2025-08-08 19:05:42,189:INFO:Uploading results into container
+2025-08-08 19:05:42,190:INFO:Uploading model into container now
+2025-08-08 19:05:42,191:INFO:_master_model_container: 7
+2025-08-08 19:05:42,191:INFO:_display_container: 2
+2025-08-08 19:05:42,192:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=120, verbose=0,
+                       warm_start=False)
+2025-08-08 19:05:42,192:INFO:create_model() successfully completed......................................
+2025-08-08 19:05:42,405:INFO:SubProcess create_model() end ==================================
+2025-08-08 19:05:42,405:INFO:Creating metrics dataframe
+2025-08-08 19:05:42,411:INFO:Initializing Quadratic Discriminant Analysis
+2025-08-08 19:05:42,412:INFO:Total runtime is 0.23034004370371503 minutes
+2025-08-08 19:05:42,416:INFO:SubProcess create_model() called ==================================
+2025-08-08 19:05:42,416:INFO:Initializing create_model()
+2025-08-08 19:05:42,416:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ba5bd8eb3d0>, estimator=qda, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7ba591ac69d0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-08-08 19:05:42,416:INFO:Checking exceptions
+2025-08-08 19:05:42,416:INFO:Importing libraries
+2025-08-08 19:05:42,417:INFO:Copying training dataset
+2025-08-08 19:05:42,422:INFO:Defining folds
+2025-08-08 19:05:42,422:INFO:Declaring metric variables
+2025-08-08 19:05:42,429:INFO:Importing untrained model
+2025-08-08 19:05:42,434:INFO:Quadratic Discriminant Analysis Imported successfully
+2025-08-08 19:05:42,441:INFO:Starting cross validation
+2025-08-08 19:05:42,443:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-08-08 19:05:42,709:INFO:Calculating mean and std
+2025-08-08 19:05:42,711:INFO:Creating metrics dataframe
+2025-08-08 19:05:42,712:INFO:Uploading results into container
+2025-08-08 19:05:42,713:INFO:Uploading model into container now
+2025-08-08 19:05:42,714:INFO:_master_model_container: 8
+2025-08-08 19:05:42,714:INFO:_display_container: 2
+2025-08-08 19:05:42,714:INFO:QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001)
+2025-08-08 19:05:42,714:INFO:create_model() successfully completed......................................
+2025-08-08 19:05:42,912:INFO:SubProcess create_model() end ==================================
+2025-08-08 19:05:42,913:INFO:Creating metrics dataframe
+2025-08-08 19:05:42,920:INFO:Initializing Ada Boost Classifier
+2025-08-08 19:05:42,920:INFO:Total runtime is 0.23881189823150636 minutes
+2025-08-08 19:05:42,923:INFO:SubProcess create_model() called ==================================
+2025-08-08 19:05:42,924:INFO:Initializing create_model()
+2025-08-08 19:05:42,924:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ba5bd8eb3d0>, estimator=ada, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7ba591ac69d0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-08-08 19:05:42,924:INFO:Checking exceptions
+2025-08-08 19:05:42,924:INFO:Importing libraries
+2025-08-08 19:05:42,924:INFO:Copying training dataset
+2025-08-08 19:05:42,929:INFO:Defining folds
+2025-08-08 19:05:42,929:INFO:Declaring metric variables
+2025-08-08 19:05:42,933:INFO:Importing untrained model
+2025-08-08 19:05:42,936:INFO:Ada Boost Classifier Imported successfully
+2025-08-08 19:05:42,942:INFO:Starting cross validation
+2025-08-08 19:05:42,943:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-08-08 19:05:42,973:WARNING:/workspaces/TechCatalyst_DE_2025/pycaret_env/lib/python3.11/site-packages/sklearn/ensemble/_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2025-08-08 19:05:42,974:WARNING:/workspaces/TechCatalyst_DE_2025/pycaret_env/lib/python3.11/site-packages/sklearn/ensemble/_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2025-08-08 19:05:43,138:WARNING:/workspaces/TechCatalyst_DE_2025/pycaret_env/lib/python3.11/site-packages/sklearn/ensemble/_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2025-08-08 19:05:43,177:WARNING:/workspaces/TechCatalyst_DE_2025/pycaret_env/lib/python3.11/site-packages/sklearn/ensemble/_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2025-08-08 19:05:43,284:WARNING:/workspaces/TechCatalyst_DE_2025/pycaret_env/lib/python3.11/site-packages/sklearn/ensemble/_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2025-08-08 19:05:43,329:WARNING:/workspaces/TechCatalyst_DE_2025/pycaret_env/lib/python3.11/site-packages/sklearn/ensemble/_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2025-08-08 19:05:43,480:WARNING:/workspaces/TechCatalyst_DE_2025/pycaret_env/lib/python3.11/site-packages/sklearn/ensemble/_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2025-08-08 19:05:43,509:WARNING:/workspaces/TechCatalyst_DE_2025/pycaret_env/lib/python3.11/site-packages/sklearn/ensemble/_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2025-08-08 19:05:43,632:WARNING:/workspaces/TechCatalyst_DE_2025/pycaret_env/lib/python3.11/site-packages/sklearn/ensemble/_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2025-08-08 19:05:43,651:WARNING:/workspaces/TechCatalyst_DE_2025/pycaret_env/lib/python3.11/site-packages/sklearn/ensemble/_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2025-08-08 19:05:43,787:INFO:Calculating mean and std
+2025-08-08 19:05:43,788:INFO:Creating metrics dataframe
+2025-08-08 19:05:43,790:INFO:Uploading results into container
+2025-08-08 19:05:43,790:INFO:Uploading model into container now
+2025-08-08 19:05:43,791:INFO:_master_model_container: 9
+2025-08-08 19:05:43,791:INFO:_display_container: 2
+2025-08-08 19:05:43,791:INFO:AdaBoostClassifier(algorithm='SAMME.R', estimator=None, learning_rate=1.0,
+                   n_estimators=50, random_state=120)
+2025-08-08 19:05:43,791:INFO:create_model() successfully completed......................................
+2025-08-08 19:05:43,974:INFO:SubProcess create_model() end ==================================
+2025-08-08 19:05:43,974:INFO:Creating metrics dataframe
+2025-08-08 19:05:43,987:INFO:Initializing Gradient Boosting Classifier
+2025-08-08 19:05:43,987:INFO:Total runtime is 0.25659775336583457 minutes
+2025-08-08 19:05:43,990:INFO:SubProcess create_model() called ==================================
+2025-08-08 19:05:43,991:INFO:Initializing create_model()
+2025-08-08 19:05:43,991:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ba5bd8eb3d0>, estimator=gbc, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7ba591ac69d0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-08-08 19:05:43,991:INFO:Checking exceptions
+2025-08-08 19:05:43,991:INFO:Importing libraries
+2025-08-08 19:05:43,991:INFO:Copying training dataset
+2025-08-08 19:05:43,997:INFO:Defining folds
+2025-08-08 19:05:43,997:INFO:Declaring metric variables
+2025-08-08 19:05:44,000:INFO:Importing untrained model
+2025-08-08 19:05:44,004:INFO:Gradient Boosting Classifier Imported successfully
+2025-08-08 19:05:44,010:INFO:Starting cross validation
+2025-08-08 19:05:44,011:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-08-08 19:05:45,179:INFO:Calculating mean and std
+2025-08-08 19:05:45,180:INFO:Creating metrics dataframe
+2025-08-08 19:05:45,183:INFO:Uploading results into container
+2025-08-08 19:05:45,183:INFO:Uploading model into container now
+2025-08-08 19:05:45,183:INFO:_master_model_container: 10
+2025-08-08 19:05:45,184:INFO:_display_container: 2
+2025-08-08 19:05:45,184:INFO:GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='log_loss', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_samples_leaf=1,
+                           min_samples_split=2, min_weight_fraction_leaf=0.0,
+                           n_estimators=100, n_iter_no_change=None,
+                           random_state=120, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False)
+2025-08-08 19:05:45,184:INFO:create_model() successfully completed......................................
+2025-08-08 19:05:45,369:INFO:SubProcess create_model() end ==================================
+2025-08-08 19:05:45,369:INFO:Creating metrics dataframe
+2025-08-08 19:05:45,376:INFO:Initializing Linear Discriminant Analysis
+2025-08-08 19:05:45,376:INFO:Total runtime is 0.27974611123402915 minutes
+2025-08-08 19:05:45,378:INFO:SubProcess create_model() called ==================================
+2025-08-08 19:05:45,379:INFO:Initializing create_model()
+2025-08-08 19:05:45,379:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ba5bd8eb3d0>, estimator=lda, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7ba591ac69d0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-08-08 19:05:45,379:INFO:Checking exceptions
+2025-08-08 19:05:45,379:INFO:Importing libraries
+2025-08-08 19:05:45,379:INFO:Copying training dataset
+2025-08-08 19:05:45,385:INFO:Defining folds
+2025-08-08 19:05:45,385:INFO:Declaring metric variables
+2025-08-08 19:05:45,388:INFO:Importing untrained model
+2025-08-08 19:05:45,391:INFO:Linear Discriminant Analysis Imported successfully
+2025-08-08 19:05:45,398:INFO:Starting cross validation
+2025-08-08 19:05:45,399:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-08-08 19:05:45,655:INFO:Calculating mean and std
+2025-08-08 19:05:45,656:INFO:Creating metrics dataframe
+2025-08-08 19:05:45,657:INFO:Uploading results into container
+2025-08-08 19:05:45,658:INFO:Uploading model into container now
+2025-08-08 19:05:45,658:INFO:_master_model_container: 11
+2025-08-08 19:05:45,659:INFO:_display_container: 2
+2025-08-08 19:05:45,659:INFO:LinearDiscriminantAnalysis(covariance_estimator=None, n_components=None,
+                           priors=None, shrinkage=None, solver='svd',
+                           store_covariance=False, tol=0.0001)
+2025-08-08 19:05:45,659:INFO:create_model() successfully completed......................................
+2025-08-08 19:05:45,842:INFO:SubProcess create_model() end ==================================
+2025-08-08 19:05:45,842:INFO:Creating metrics dataframe
+2025-08-08 19:05:45,852:INFO:Initializing Extra Trees Classifier
+2025-08-08 19:05:45,852:INFO:Total runtime is 0.28767431577046715 minutes
+2025-08-08 19:05:45,856:INFO:SubProcess create_model() called ==================================
+2025-08-08 19:05:45,856:INFO:Initializing create_model()
+2025-08-08 19:05:45,856:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ba5bd8eb3d0>, estimator=et, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7ba591ac69d0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-08-08 19:05:45,856:INFO:Checking exceptions
+2025-08-08 19:05:45,856:INFO:Importing libraries
+2025-08-08 19:05:45,856:INFO:Copying training dataset
+2025-08-08 19:05:45,862:INFO:Defining folds
+2025-08-08 19:05:45,862:INFO:Declaring metric variables
+2025-08-08 19:05:45,865:INFO:Importing untrained model
+2025-08-08 19:05:45,871:INFO:Extra Trees Classifier Imported successfully
+2025-08-08 19:05:45,883:INFO:Starting cross validation
+2025-08-08 19:05:45,885:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-08-08 19:05:47,235:INFO:Calculating mean and std
+2025-08-08 19:05:47,236:INFO:Creating metrics dataframe
+2025-08-08 19:05:47,238:INFO:Uploading results into container
+2025-08-08 19:05:47,239:INFO:Uploading model into container now
+2025-08-08 19:05:47,239:INFO:_master_model_container: 12
+2025-08-08 19:05:47,240:INFO:_display_container: 2
+2025-08-08 19:05:47,240:INFO:ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='sqrt',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                     oob_score=False, random_state=120, verbose=0,
+                     warm_start=False)
+2025-08-08 19:05:47,240:INFO:create_model() successfully completed......................................
+2025-08-08 19:05:47,428:INFO:SubProcess create_model() end ==================================
+2025-08-08 19:05:47,428:INFO:Creating metrics dataframe
+2025-08-08 19:05:47,435:INFO:Initializing Extreme Gradient Boosting
+2025-08-08 19:05:47,435:INFO:Total runtime is 0.31406809091567994 minutes
+2025-08-08 19:05:47,441:INFO:SubProcess create_model() called ==================================
+2025-08-08 19:05:47,442:INFO:Initializing create_model()
+2025-08-08 19:05:47,442:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ba5bd8eb3d0>, estimator=xgboost, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7ba591ac69d0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-08-08 19:05:47,442:INFO:Checking exceptions
+2025-08-08 19:05:47,442:INFO:Importing libraries
+2025-08-08 19:05:47,442:INFO:Copying training dataset
+2025-08-08 19:05:47,447:INFO:Defining folds
+2025-08-08 19:05:47,447:INFO:Declaring metric variables
+2025-08-08 19:05:47,452:INFO:Importing untrained model
+2025-08-08 19:05:47,456:INFO:Extreme Gradient Boosting Imported successfully
+2025-08-08 19:05:47,463:INFO:Starting cross validation
+2025-08-08 19:05:47,464:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-08-08 19:05:48,300:INFO:Calculating mean and std
+2025-08-08 19:05:48,301:INFO:Creating metrics dataframe
+2025-08-08 19:05:48,306:INFO:Uploading results into container
+2025-08-08 19:05:48,306:INFO:Uploading model into container now
+2025-08-08 19:05:48,307:INFO:_master_model_container: 13
+2025-08-08 19:05:48,309:INFO:_display_container: 2
+2025-08-08 19:05:48,310:INFO:XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              feature_weights=None, gamma=None, grow_policy=None,
+              importance_type=None, interaction_constraints=None,
+              learning_rate=None, max_bin=None, max_cat_threshold=None,
+              max_cat_to_onehot=None, max_delta_step=None, max_depth=None,
+              max_leaves=None, min_child_weight=None, missing=nan,
+              monotone_constraints=None, multi_strategy=None, n_estimators=None,
+              n_jobs=-1, num_parallel_tree=None, ...)
+2025-08-08 19:05:48,310:INFO:create_model() successfully completed......................................
+2025-08-08 19:05:48,522:INFO:SubProcess create_model() end ==================================
+2025-08-08 19:05:48,522:INFO:Creating metrics dataframe
+2025-08-08 19:05:48,530:INFO:Initializing Light Gradient Boosting Machine
+2025-08-08 19:05:48,530:INFO:Total runtime is 0.33230933745702107 minutes
+2025-08-08 19:05:48,532:INFO:SubProcess create_model() called ==================================
+2025-08-08 19:05:48,533:INFO:Initializing create_model()
+2025-08-08 19:05:48,533:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ba5bd8eb3d0>, estimator=lightgbm, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7ba591ac69d0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-08-08 19:05:48,533:INFO:Checking exceptions
+2025-08-08 19:05:48,533:INFO:Importing libraries
+2025-08-08 19:05:48,533:INFO:Copying training dataset
+2025-08-08 19:05:48,538:INFO:Defining folds
+2025-08-08 19:05:48,538:INFO:Declaring metric variables
+2025-08-08 19:05:48,542:INFO:Importing untrained model
+2025-08-08 19:05:48,546:INFO:Light Gradient Boosting Machine Imported successfully
+2025-08-08 19:05:48,552:INFO:Starting cross validation
+2025-08-08 19:05:48,553:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-08-08 19:05:50,694:INFO:Calculating mean and std
+2025-08-08 19:05:50,696:INFO:Creating metrics dataframe
+2025-08-08 19:05:50,698:INFO:Uploading results into container
+2025-08-08 19:05:50,699:INFO:Uploading model into container now
+2025-08-08 19:05:50,700:INFO:_master_model_container: 14
+2025-08-08 19:05:50,700:INFO:_display_container: 2
+2025-08-08 19:05:50,701:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=120, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2025-08-08 19:05:50,701:INFO:create_model() successfully completed......................................
+2025-08-08 19:05:50,888:INFO:SubProcess create_model() end ==================================
+2025-08-08 19:05:50,889:INFO:Creating metrics dataframe
+2025-08-08 19:05:50,896:INFO:Initializing CatBoost Classifier
+2025-08-08 19:05:50,896:INFO:Total runtime is 0.3717487692832947 minutes
+2025-08-08 19:05:50,899:INFO:SubProcess create_model() called ==================================
+2025-08-08 19:05:50,900:INFO:Initializing create_model()
+2025-08-08 19:05:50,900:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ba5bd8eb3d0>, estimator=catboost, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7ba591ac69d0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-08-08 19:05:50,900:INFO:Checking exceptions
+2025-08-08 19:05:50,900:INFO:Importing libraries
+2025-08-08 19:05:50,900:INFO:Copying training dataset
+2025-08-08 19:05:50,906:INFO:Defining folds
+2025-08-08 19:05:50,906:INFO:Declaring metric variables
+2025-08-08 19:05:50,910:INFO:Importing untrained model
+2025-08-08 19:05:50,913:INFO:CatBoost Classifier Imported successfully
+2025-08-08 19:05:50,920:INFO:Starting cross validation
+2025-08-08 19:05:50,921:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-08-08 19:06:11,756:INFO:Calculating mean and std
+2025-08-08 19:06:11,762:INFO:Creating metrics dataframe
+2025-08-08 19:06:11,767:INFO:Uploading results into container
+2025-08-08 19:06:11,767:INFO:Uploading model into container now
+2025-08-08 19:06:11,770:INFO:_master_model_container: 15
+2025-08-08 19:06:11,772:INFO:_display_container: 2
+2025-08-08 19:06:11,772:INFO:<catboost.core.CatBoostClassifier object at 0x7ba591aa6490>
+2025-08-08 19:06:11,772:INFO:create_model() successfully completed......................................
+2025-08-08 19:06:12,207:INFO:SubProcess create_model() end ==================================
+2025-08-08 19:06:12,209:INFO:Creating metrics dataframe
+2025-08-08 19:06:12,242:INFO:Initializing Dummy Classifier
+2025-08-08 19:06:12,243:INFO:Total runtime is 0.7275289177894593 minutes
+2025-08-08 19:06:12,257:INFO:SubProcess create_model() called ==================================
+2025-08-08 19:06:12,257:INFO:Initializing create_model()
+2025-08-08 19:06:12,257:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ba5bd8eb3d0>, estimator=dummy, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7ba591ac69d0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-08-08 19:06:12,257:INFO:Checking exceptions
+2025-08-08 19:06:12,258:INFO:Importing libraries
+2025-08-08 19:06:12,258:INFO:Copying training dataset
+2025-08-08 19:06:12,264:INFO:Defining folds
+2025-08-08 19:06:12,264:INFO:Declaring metric variables
+2025-08-08 19:06:12,276:INFO:Importing untrained model
+2025-08-08 19:06:12,285:INFO:Dummy Classifier Imported successfully
+2025-08-08 19:06:12,304:INFO:Starting cross validation
+2025-08-08 19:06:12,305:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-08-08 19:06:12,436:WARNING:/workspaces/TechCatalyst_DE_2025/pycaret_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-08-08 19:06:12,453:WARNING:/workspaces/TechCatalyst_DE_2025/pycaret_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-08-08 19:06:12,487:WARNING:/workspaces/TechCatalyst_DE_2025/pycaret_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-08-08 19:06:12,526:WARNING:/workspaces/TechCatalyst_DE_2025/pycaret_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-08-08 19:06:12,542:WARNING:/workspaces/TechCatalyst_DE_2025/pycaret_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-08-08 19:06:12,606:WARNING:/workspaces/TechCatalyst_DE_2025/pycaret_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-08-08 19:06:12,625:WARNING:/workspaces/TechCatalyst_DE_2025/pycaret_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-08-08 19:06:12,647:WARNING:/workspaces/TechCatalyst_DE_2025/pycaret_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-08-08 19:06:12,676:WARNING:/workspaces/TechCatalyst_DE_2025/pycaret_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-08-08 19:06:12,685:WARNING:/workspaces/TechCatalyst_DE_2025/pycaret_env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2025-08-08 19:06:12,714:INFO:Calculating mean and std
+2025-08-08 19:06:12,716:INFO:Creating metrics dataframe
+2025-08-08 19:06:12,723:INFO:Uploading results into container
+2025-08-08 19:06:12,726:INFO:Uploading model into container now
+2025-08-08 19:06:12,726:INFO:_master_model_container: 16
+2025-08-08 19:06:12,727:INFO:_display_container: 2
+2025-08-08 19:06:12,727:INFO:DummyClassifier(constant=None, random_state=120, strategy='prior')
+2025-08-08 19:06:12,727:INFO:create_model() successfully completed......................................
+2025-08-08 19:06:13,026:INFO:SubProcess create_model() end ==================================
+2025-08-08 19:06:13,026:INFO:Creating metrics dataframe
+2025-08-08 19:06:13,058:WARNING:/workspaces/TechCatalyst_DE_2025/pycaret_env/lib/python3.11/site-packages/pycaret/internal/pycaret_experiment/supervised_experiment.py:339: FutureWarning: Styler.applymap has been deprecated. Use Styler.map instead.
+  .applymap(highlight_cols, subset=["TT (Sec)"])
+
+2025-08-08 19:06:13,073:INFO:Initializing create_model()
+2025-08-08 19:06:13,074:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ba5bd8eb3d0>, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=120, verbose=0,
+                       warm_start=False), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-08-08 19:06:13,075:INFO:Checking exceptions
+2025-08-08 19:06:13,077:INFO:Importing libraries
+2025-08-08 19:06:13,078:INFO:Copying training dataset
+2025-08-08 19:06:13,087:INFO:Defining folds
+2025-08-08 19:06:13,088:INFO:Declaring metric variables
+2025-08-08 19:06:13,088:INFO:Importing untrained model
+2025-08-08 19:06:13,088:INFO:Declaring custom model
+2025-08-08 19:06:13,089:INFO:Random Forest Classifier Imported successfully
+2025-08-08 19:06:13,090:INFO:Cross validation set to False
+2025-08-08 19:06:13,090:INFO:Fitting Model
+2025-08-08 19:06:13,340:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=120, verbose=0,
+                       warm_start=False)
+2025-08-08 19:06:13,340:INFO:create_model() successfully completed......................................
+2025-08-08 19:06:13,737:INFO:_master_model_container: 16
+2025-08-08 19:06:13,739:INFO:_display_container: 2
+2025-08-08 19:06:13,740:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=120, verbose=0,
+                       warm_start=False)
+2025-08-08 19:06:13,740:INFO:compare_models() successfully completed......................................
+2025-08-08 19:06:30,726:INFO:gpu_param set to False
+2025-08-08 19:06:30,788:INFO:Soft dependency imported: xgboost: 3.0.3
+2025-08-08 19:06:30,790:INFO:Soft dependency imported: catboost: 1.2.8
+2025-08-08 19:06:30,862:INFO:Soft dependency imported: xgboost: 3.0.3
+2025-08-08 19:06:30,866:INFO:Soft dependency imported: catboost: 1.2.8
+2025-08-08 19:06:32,432:INFO:Initializing predict_model()
+2025-08-08 19:06:32,433:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ba5bd8eb3d0>, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=120, verbose=0,
+                       warm_start=False), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7ba591a54400>)
+2025-08-08 19:06:32,433:INFO:Checking exceptions
+2025-08-08 19:06:32,433:INFO:Preloading libraries
+2025-08-08 19:06:51,886:INFO:Initializing plot_model()
+2025-08-08 19:06:51,887:INFO:plot_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ba5bd8eb3d0>, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=120, verbose=0,
+                       warm_start=False), plot=confusion_matrix, scale=1, save=False, fold=None, fit_kwargs=None, plot_kwargs=None, groups=None, feature_name=None, label=False, verbose=True, system=True, display=None, display_format=None)
+2025-08-08 19:06:51,887:INFO:Checking exceptions
+2025-08-08 19:06:51,914:INFO:Preloading libraries
+2025-08-08 19:06:51,924:INFO:Copying training dataset
+2025-08-08 19:06:51,924:INFO:Plot type: confusion_matrix
+2025-08-08 19:06:52,002:INFO:Fitting Model
+2025-08-08 19:06:52,005:WARNING:/workspaces/TechCatalyst_DE_2025/pycaret_env/lib/python3.11/site-packages/sklearn/base.py:493: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+
+2025-08-08 19:06:52,006:INFO:Scoring test/hold-out set
+2025-08-08 19:06:52,119:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:06:52,138:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:06:52,139:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:06:52,141:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:06:52,142:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:06:52,144:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:06:52,146:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:06:52,147:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:06:52,148:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:06:52,149:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:06:52,149:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:06:52,149:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:06:52,196:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:06:52,197:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:06:52,197:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:06:52,198:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:06:52,199:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:06:52,199:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:06:52,200:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:06:52,204:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:06:52,205:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:06:52,206:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:06:52,207:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:06:52,211:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:06:52,212:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:06:52,215:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:06:52,219:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:06:52,221:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:06:52,221:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:06:52,222:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:06:52,222:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:06:52,222:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:06:52,223:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:06:52,224:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:06:52,224:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:06:52,291:INFO:Visual Rendered Successfully
+2025-08-08 19:06:52,514:INFO:plot_model() successfully completed......................................
+2025-08-08 19:08:58,553:INFO:Initializing plot_model()
+2025-08-08 19:08:58,555:INFO:plot_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ba5bd8eb3d0>, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=120, verbose=0,
+                       warm_start=False), plot=confusion_matrix, scale=1, save=False, fold=None, fit_kwargs=None, plot_kwargs=None, groups=None, feature_name=None, label=False, verbose=True, system=True, display=None, display_format=None)
+2025-08-08 19:08:58,556:INFO:Checking exceptions
+2025-08-08 19:08:58,608:INFO:Preloading libraries
+2025-08-08 19:08:58,670:INFO:Copying training dataset
+2025-08-08 19:08:58,670:INFO:Plot type: confusion_matrix
+2025-08-08 19:08:58,818:INFO:Fitting Model
+2025-08-08 19:08:58,818:WARNING:/workspaces/TechCatalyst_DE_2025/pycaret_env/lib/python3.11/site-packages/sklearn/base.py:493: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+
+2025-08-08 19:08:58,818:INFO:Scoring test/hold-out set
+2025-08-08 19:08:58,881:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:08:58,881:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:08:58,882:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:08:58,883:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:08:58,883:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:08:58,885:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:08:58,887:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:08:58,887:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:08:58,889:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:08:58,890:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:08:58,890:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:08:58,891:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:08:58,931:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:08:58,931:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:08:58,932:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:08:58,933:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:08:58,933:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:08:58,934:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:08:58,934:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:08:58,937:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:08:58,938:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:08:58,939:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:08:58,939:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:08:58,941:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:08:58,942:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:08:58,943:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:08:58,945:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:08:58,946:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:08:58,946:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:08:58,947:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:08:58,947:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:08:58,948:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:08:58,948:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:08:58,948:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:08:58,949:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:08:58,996:INFO:Visual Rendered Successfully
+2025-08-08 19:08:59,225:INFO:plot_model() successfully completed......................................
+2025-08-08 19:09:14,301:INFO:Initializing plot_model()
+2025-08-08 19:09:14,301:INFO:plot_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ba5bd8eb3d0>, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=120, verbose=0,
+                       warm_start=False), plot=feature, scale=1, save=False, fold=None, fit_kwargs=None, plot_kwargs=None, groups=None, feature_name=None, label=False, verbose=True, system=True, display=None, display_format=None)
+2025-08-08 19:09:14,302:INFO:Checking exceptions
+2025-08-08 19:09:14,346:INFO:Preloading libraries
+2025-08-08 19:09:14,357:INFO:Copying training dataset
+2025-08-08 19:09:14,357:INFO:Plot type: feature
+2025-08-08 19:09:14,358:WARNING:No coef_ found. Trying feature_importances_
+2025-08-08 19:09:14,418:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,418:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,419:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,420:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,421:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,421:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,422:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,423:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,423:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,426:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,426:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,427:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,427:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,435:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,435:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,436:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,436:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,437:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,437:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,442:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,492:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,492:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,493:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,494:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,495:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,496:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,497:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,497:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,499:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,502:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,502:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,503:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,503:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,506:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,506:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,507:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,507:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,508:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,508:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,509:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,510:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,511:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,512:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,512:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,513:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,517:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,517:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,520:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,521:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,523:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,524:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,525:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,527:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,528:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,529:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,533:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,535:WARNING:findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif
+2025-08-08 19:09:14,568:INFO:Visual Rendered Successfully
+2025-08-08 19:09:14,767:INFO:plot_model() successfully completed......................................
+2025-08-08 19:11:19,566:INFO:Initializing load_model()
+2025-08-08 19:11:19,567:INFO:load_model(model_name=diabetes_model, platform=None, authentication=None, verbose=True)
